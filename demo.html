@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="jquery.autosize.js"></script>
+		
+		<style type="text/css">
+			.target {
+				font-size: 24px;
+				width: 500px;
+				margin: 0 auto 10px;
+				padding: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="target" style="background: #0CC;">My text goes here. It is quite big and should overflow!</div>
+		<div class="target" style="background: #CC0;">My text goes here. It is quite big and should overflow even more!</div>
+		<div class="target" style="background: #C0C;">This is quite big and should overflow most of all! Width is the same, so the font size will be even smaller...</div>
+		<button type="button" onclick="$('.target').autosize().css('background', '#CCC');">Autosize (make it fit)</button>
+	</body>
+
+</html>
